@@ -1011,6 +1011,334 @@ footer {
       font-size: 1.4rem;
     }
   }
- 
+ /* === Contact Page Styles === */
+
+.contact-main {
+  padding: 2vw 4vw 0 4vw;
+  background: #fff;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.contact-header h1 {
+  font-size: 2.3rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.contact-header p {
+  color: #444;
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.contact-content {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.contact-form {
+  background: #f9f9f9;
+  border-radius: 1.2rem;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  flex: 2 1 340px;
+  min-width: 300px;
+  max-width: 480px;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1 1 140px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  color: #222;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.8em 1em;
+  border: 1px solid #e0e0e0;
+  border-radius: 1.2em;
+  font-size: 1rem;
+  background: #fff;
+  transition: border 0.2s;
+  resize: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border: 1.5px solid #ff7043;
+  outline: none;
+}
+
+.contact-form .btn-primary {
+  width: 100%;
+  margin-top: 0.7rem;
+}
+
+.contact-info {
+  background: #eaf6ef;
+  border-radius: 1.2rem;
+  padding: 2rem 1.5rem;
+  min-width: 220px;
+  max-width: 320px;
+  flex: 1 1 220px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+}
+
+.contact-info h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.2rem;
+}
+
+.contact-info li {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  color: #184d3f;
+}
+
+.contact-info i {
+  color: #ff7043;
+  font-size: 1.1rem;
+}
+
+.contact-social {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.contact-social a {
+  color: #fff;
+  background: #ff7043;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  transition: background 0.2s;
+  text-decoration: none;
+}
+
+.contact-social a:hover {
+  background: #184d3f;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .contact-content {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: stretch;
+  }
+  .contact-form,
+  .contact-info {
+    max-width: 100%;
+  }
+}
+/* === About Us Page Styles === */
+
+.about-main {
+  padding: 2vw 4vw 0 4vw;
+  background: #fff;
+}
+
+.about-hero {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.about-hero-text {
+  flex: 2 1 340px;
+  min-width: 300px;
+  max-width: 540px;
+}
+
+.about-hero-text h1 {
+  font-size: 2.3rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+}
+
+.about-hero-text p {
+  color: #444;
+  margin-bottom: 1.1rem;
+  font-size: 1.07rem;
+}
+
+.about-hero-img {
+  flex: 1 1 260px;
+  min-width: 220px;
+  max-width: 340px;
+}
+
+.about-hero-img img {
+  width: 100%;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.about-mission {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.about-mission h2 {
+  font-size: 1.4rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.about-mission p {
+  color: #444;
+  font-size: 1.08rem;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.about-team {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.about-team h2 {
+  font-size: 1.4rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.team-list {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-member {
+  background: #f9f9f9;
+  border-radius: 1.2rem;
+  padding: 1.5rem 1.2rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  min-width: 180px;
+  max-width: 210px;
+  text-align: center;
+}
+
+.team-member img {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.7rem;
+}
+
+.team-member h4 {
+  font-size: 1.07rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.team-member span {
+  color: #888;
+  font-size: 0.97rem;
+}
+
+.about-cta {
+  background: #eaf6ef;
+  border-radius: 1.2rem;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.about-cta h2 {
+  font-size: 1.3rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+}
+
+.about-cta p {
+  color: #184d3f;
+  font-size: 1.08rem;
+  margin-bottom: 1.2rem;
+}
+
+.about-social {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.about-social a {
+  color: #fff;
+  background: #ff7043;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  transition: background 0.2s;
+  text-decoration: none;
+}
+
+.about-social a:hover {
+  background: #184d3f;
+}
+
+@media (max-width: 900px) {
+  .about-hero {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: stretch;
+  }
+  .team-list {
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: center;
+  }
+}
+
   
     

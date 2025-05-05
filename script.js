@@ -127,4 +127,14 @@ document.addEventListener('DOMContentLoaded', function() {
       window.scrollTo({top: 0, behavior: 'smooth'});
     };
   }
-  
+  // Contact form submission
+document.addEventListener('DOMContentLoaded', function() {
+  const contactForm = document.getElementById('contact-form');
+  if(contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for reaching out! Your message has been sent.');
+      contactForm.reset();
+    });
+  }
+});
